@@ -1,21 +1,36 @@
 import WhiteKey from "@/components/WhiteKey";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View
-    style={styles.container}
-    >
-      <WhiteKey></WhiteKey>
+    style = {styles.mainview}>
+      <View
+      style={styles.container}
+      >
+        <WhiteKey></WhiteKey>
+        <WhiteKey></WhiteKey>
+        <WhiteKey></WhiteKey>
+        <WhiteKey></WhiteKey>
+        <WhiteKey></WhiteKey>
+        <WhiteKey></WhiteKey>
+        <WhiteKey></WhiteKey>
+      </View>
+      <Text>Hello there</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    container: {
     backgroundColor: "red",
+    display: "flex",
+    flexDirection: "row",
+  },
+  mainview: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "cyan",
+    justifyContent: "center",
   }
 })
