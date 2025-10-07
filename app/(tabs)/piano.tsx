@@ -1,6 +1,7 @@
 import Piano from "@/components/Piano";
 import useOrientation from "@/hooks/useOrientation";
 import { Orientation } from "expo-screen-orientation";
+import React from "react";
 import { Text } from "react-native";
 
 export default function Index() {

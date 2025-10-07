@@ -3,6 +3,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { Tabs } from "expo-router";
 import { Orientation } from 'expo-screen-orientation';
+import React from 'react';
 import { Text } from 'react-native';
 
 export default function TabLayout() {

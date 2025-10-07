@@ -1,6 +1,20 @@
+import { AudioPlayer } from "expo-audio";
+import React from "react";
 import { StyleSheet, View } from "react-native";
 
-export default function WhiteKey() {
+
+
+interface WhiteKeyProps {
+  player: AudioPlayer
+}
+
+export default function WhiteKey(props: WhiteKeyProps) {
+
+  const {player}= props;
+  const onPress = () => {
+    player.seekTo(0); //Seek to time 0 of audio file
+    player.play(); //Play
+  }
 
     return (
         <View
