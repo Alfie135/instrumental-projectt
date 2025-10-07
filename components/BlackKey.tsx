@@ -4,11 +4,11 @@ import { Pressable, StyleSheet, View } from "react-native";
 
 
 
-interface WhiteKeyProps {
+interface BlackKeyProps {
   player: AudioPlayer
 }
 
-export default function WhiteKey(props: WhiteKeyProps) {
+export default function BlackKey(props: BlackKeyProps) {
 
   const {player}= props;
   const onPress = () => {
@@ -18,17 +18,16 @@ export default function WhiteKey(props: WhiteKeyProps) {
 
     return (
       <Pressable onPress={onPress}
-        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "white"}]}>
-        <View style = {styles.WhiteKey}></View>
+        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "black", height: 200}]}>
+        <View style = {[styles.BlackKey]}></View>
       </Pressable>
     );  
 }
 
 const styles = StyleSheet.create({
-  WhiteKey: {
-    width: 100,
-    height: 300,
-    borderWidth: 2,
-    borderColor: "black",
+  BlackKey: {
+    width: 60,
+    height: 200,
+    borderColor: "rgba(172, 151, 151, 1)",
   },
 })
