@@ -18,7 +18,7 @@ export default function WhiteKey(props: WhiteKeyProps) {
 
     return (
       <Pressable onPress={onPress}
-        style = {({pressed}) => [{ backgroundColor: pressed ? 'rgba(0, 115, 255, 1)' : 'blue'}]}>
+        style = {({pressed}) => [{ backgroundColor: pressed ? 'rgba(93, 109, 122)' : 'blue'}]}>
         <View style = {styles.WhiteKey}></View>
       </Pressable>
     );  
