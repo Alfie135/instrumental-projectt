@@ -1,6 +1,6 @@
 import { AudioPlayer } from "expo-audio";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Pressable, StyleSheet, View } from "react-native";
 
 
 
@@ -17,10 +17,10 @@ export default function WhiteKey(props: WhiteKeyProps) {
   }
 
     return (
-        <View
-        style = {styles.WhiteKey}
-        >
-        </View>
+      <Pressable onPress={onPress}
+        style = {({pressed}) => [{ backgroundColor: pressed ? 'rgba(0, 115, 255, 1)' : 'blue'}]}>
+        <View style = {styles.WhiteKey}></View>
+      </Pressable>
     );  
 }
 
