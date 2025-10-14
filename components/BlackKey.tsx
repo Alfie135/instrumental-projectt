@@ -17,10 +17,12 @@ export default function BlackKey(props: BlackKeyProps) {
   }
 
     return (
+      <View style={styles.KeyContainer}>
       <Pressable onPress={onPress}
-        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "black", height: 200}]}>
-        <View style = {[styles.BlackKey]}></View>
+        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "black", height: 200}, styles.BlackKey]}>
       </Pressable>
+
+      </View>
     );  
 }
 
@@ -28,6 +30,10 @@ const styles = StyleSheet.create({
   BlackKey: {
     width: 60,
     height: 200,
-    borderColor: "rgba(172, 151, 151, 1)",
+    position: "relative",
+    left: -130,
   },
+  KeyContainer: {
+    width: 0,
+  }
 })

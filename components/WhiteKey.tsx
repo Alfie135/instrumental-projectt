@@ -1,5 +1,4 @@
 import { AudioPlayer } from "expo-audio";
-import React from "react";
 import { Pressable, StyleSheet, View } from "react-native";
 
 

@@ -13,17 +13,17 @@ export default function Piano() {
       style={styles.mainview}>
       <View style={styles.container}> 
         <WhiteKey player={players.c} /> 
-        <BlackKey player={players.db} />
         <WhiteKey player={players.d} />
-        <BlackKey player={players.eb} />
+        <BlackKey player={players.db} />
         <WhiteKey player={players.e} />
+        <BlackKey player={players.eb} />
         <WhiteKey player={players.f} />
-        <BlackKey player={players.gb} />
         <WhiteKey player={players.g} />
-        <BlackKey player={players.ab} />
+        <BlackKey player={players.gb} />
         <WhiteKey player={players.a} />
-        <BlackKey player={players.bb} />
+        <BlackKey player={players.ab} />
         <WhiteKey player={players.b} />
+        <BlackKey player={players.bb} />
       </View>
       <Text>Press any key to play it's corresponding note!</Text>
     </View>
@@ -35,13 +35,13 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     borderWidth: 8,
-    borderColor: "rgba(100, 92, 92, 1)",
-    backgroundColor: "rgba(100, 92, 92, 1)",
+    borderColor: "#3abecfff",
+    backgroundColor: "#3abecfff",
   },
   mainview: {
     flex: 1,
     alignItems: "center",
-    backgroundColor: "teal",
+    backgroundColor: "#3abecfff",
     justifyContent: "center",
   }
 })
