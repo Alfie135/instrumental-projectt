@@ -10,13 +10,13 @@ export default function Drums() {
 
     return <View style ={styles.mainview}>
         <ImageBackground source={image} style ={styles.imageStyling}>
-            <DrumKey player={players.snare} />
-            <DrumKey player={players.hihat} />
-            <DrumKey player={players.crashCymbal} />
-            <DrumKey player={players.smallTom} />
-            <DrumKey player={players.mediumTom} />
-            <DrumKey player={players.rideCymbal} />
-            <DrumKey player={players.floorTom} />
+            <DrumKey player={players.snare} top={165} left={46} />
+            <DrumKey player={players.hihat} top={65} left={-2} />
+            <DrumKey player={players.crashCymbal} top={160} left={-55}/>
+            <DrumKey player={players.smallTom} top={70} left={-105}/>
+            <DrumKey player={players.mediumTom} top={80} left={-110}/>
+            <DrumKey player={players.rideCymbal} top={70} left={-110}/>
+            <DrumKey player={players.floorTom} top={160} left={-245}/>
         </ImageBackground>
         <Text>Press on the drum to play its corresponding sound! </Text>
     </View>
@@ -24,8 +24,10 @@ export default function Drums() {
 
 const styles = StyleSheet.create({
     imageStyling: {
-        height: 400,
-        width: 600,
+        height: 350,
+        width: 550,
+        flexDirection: "row",
+        display: "flex",
     },
 
     mainview: {

@@ -1,8 +1,6 @@
 import { AudioPlayer } from "expo-audio";
 import { Pressable, StyleSheet, View } from "react-native";
 
-
-
 interface WhiteKeyProps {
   player: AudioPlayer
 }

@@ -4,7 +4,7 @@ import { Orientation } from "expo-screen-orientation";
 import React from 'react';
 import { Text } from 'react-native';
 
-export default function Index() {
+export default function Index() { // Orientation function for the drum page
   const screenOrientation = useOrientation();
 
   if (screenOrientation === Orientation.LANDSCAPE_LEFT) 
