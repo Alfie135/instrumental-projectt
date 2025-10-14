@@ -14,13 +14,13 @@ export function loadAudioPlayers() {
   const gb = useAudioPlayer(require('../helpers/notes/piano/Gb4.mp3'));
   const g = useAudioPlayer(require('../helpers/notes/piano/G4.mp3'));
 
-  const snare = useAudioPlayer(require('../helpers/notes/drums/drum1.mp3'));
-  const hihat = useAudioPlayer(require('../helpers/notes/drums/drum2.mp3'));
-  const crashCymbal = useAudioPlayer(require('../helpers/notes/drums/drum3.mp3'));
-  const smallTom = useAudioPlayer(require('../helpers/notes/drums/drum5.mp3'));
-  const mediumTom = useAudioPlayer(require('../helpers/notes/drums/drum4.mp3'));
-  const rideCymbal = useAudioPlayer(require('../helpers/notes/drums/drum6.mp3'));
-  const floorTom = useAudioPlayer(require('../helpers/notes/drums/drum7.mp3'));
+  const snare = useAudioPlayer(require('../helpers/notes/drums/snare.wav'));
+  const hihat = useAudioPlayer(require('../helpers/notes/drums/hihat.mp3'));
+  const crashCymbal = useAudioPlayer(require('../helpers/notes/drums/crashCymbal.wav'));
+  const smallTom = useAudioPlayer(require('../helpers/notes/drums/smallTom.wav'));
+  const mediumTom = useAudioPlayer(require('../helpers/notes/drums/mediumTom.wav'));
+  const rideCymbal = useAudioPlayer(require('../helpers/notes/drums/rideCymbal.wav'));
+  const floorTom = useAudioPlayer(require('../helpers/notes/drums/floorTom.wav'));
 
   return { ab, a, bb, b, c, db, d, eb, e, f, gb, g, snare, hihat, crashCymbal, smallTom, mediumTom, rideCymbal, floorTom };
 }
