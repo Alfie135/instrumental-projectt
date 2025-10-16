@@ -6,10 +6,10 @@ import DrumKey from "./DrumKey";
 const image = require('../assets/images/drumKit.png');
 
 export default function Drums() {
-    const players = loadAudioPlayers();
+    const players = loadAudioPlayers(); // Adds in the keys and assigns sound to them. Also adjusts their position to be perfectly over each instrument.
 
-    return <View style ={styles.mainview}>
-        <ImageBackground source={image} style ={styles.imageStyling}>
+    return <View style ={styles.mainview}> 
+        <ImageBackground source={image} style ={styles.imageStyling}> 
             <DrumKey player={players.snare} top={165} left={46} />
             <DrumKey player={players.hihat} top={65} left={-2} />
             <DrumKey player={players.crashCymbal} top={160} left={-55}/>
@@ -22,7 +22,7 @@ export default function Drums() {
     </View>
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ // Formatting for the image used on the drums page
     imageStyling: {
         height: 350,
         width: 550,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         display: "flex",
     },
 
-    mainview: {
+    mainview: { //Aligns everything to the centre
     flex: 1,
     alignItems: "center",
     backgroundColor: "#3abecfff",

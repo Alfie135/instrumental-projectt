@@ -16,14 +16,14 @@ export default function WhiteKey(props: DrumKeyProps) {
   }
 
     return (
-      <Pressable onPress={onPress}
-        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "white", height: 100, top:top, left:left, opacity: 0.05, borderRadius: 50}]}>
+      <Pressable onPress={onPress} // When the button is pressed, change colour to colour listed:
+        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "white", height: 100, top:top, left:left, opacity: 0.02, borderRadius: 50}]}>
         <View style = {styles.DrumKey}></View>
       </Pressable>
     );  
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ // Formatting for the pressable buttons
   DrumKey: {
     width: 100,
     height: 100,

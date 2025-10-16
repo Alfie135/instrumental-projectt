@@ -30,7 +30,7 @@ export default function Piano() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ // Formatting for container that holds the piano keys.
   container: {
     display: "flex",
     flexDirection: "row",
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     borderColor: "#3abecfff",
     backgroundColor: "#3abecfff",
   },
-  mainview: {
+  mainview: { // Centres everything on the page.
     flex: 1,
     alignItems: "center",
     backgroundColor: "#3abecfff",

@@ -8,7 +8,7 @@ interface BlackKeyProps {
   player: AudioPlayer
 }
 
-export default function BlackKey(props: BlackKeyProps) {
+export default function BlackKey(props: BlackKeyProps) { //Black key function
 
   const {player}= props;
   const onPress = () => {
@@ -17,8 +17,8 @@ export default function BlackKey(props: BlackKeyProps) {
   }
 
     return (
-      <View style={styles.KeyContainer}>
-      <Pressable onPress={onPress}
+      <View style={styles.KeyContainer}> 
+      <Pressable onPress={onPress} // When the button is pressed, change colour to colour listed:
         style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "black", height: 200}, styles.BlackKey]}>
       </Pressable>
 
@@ -26,7 +26,7 @@ export default function BlackKey(props: BlackKeyProps) {
     );  
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ // Formatting for the pressable buttons
   BlackKey: {
     width: 60,
     height: 200,

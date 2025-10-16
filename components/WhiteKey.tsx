@@ -14,14 +14,14 @@ export default function WhiteKey(props: WhiteKeyProps) {
   }
 
     return (
-      <Pressable onPress={onPress}
+      <Pressable onPress={onPress} // When the button is pressed, change colour to colour listed:
         style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "white"}]}>
         <View style = {styles.WhiteKey}></View>
       </Pressable>
     );  
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ // Formatting for the pressable buttons
   WhiteKey: {
     width: 100,
     height: 300,
