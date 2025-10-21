@@ -18,7 +18,7 @@ export default function WhiteKey(props: DrumKeyProps) {
 
     return (
       <Pressable onPress={onPress} // When the button is pressed, change colour to colour listed:
-        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "white", height: 100, top:top, left:left, opacity: 1, borderRadius: 50 }]}>
+        style = {({pressed}) => [{ backgroundColor: pressed ? "rgba(165, 170, 180, 1)" : "white", height: 100, top:top, left:left, opacity: 0.02, borderRadius: 50 }]}>
         <View style = {styles.DrumKey}></View>
       </Pressable>
     );  
