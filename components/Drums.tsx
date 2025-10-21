@@ -10,8 +10,8 @@ export default function Drums() {
 
     return <View style ={styles.mainview}> 
         <ImageBackground source={image} style ={styles.imageStyling}> 
-            <DrumKey player={players.snare} top={165} left={46} />
-            <DrumKey player={players.hihat} top={65} left={-2} />
+            <DrumKey player={players.snare} top={165} left={46}/>
+            <DrumKey player={players.hihat} top={65} left={-2}/>
             <DrumKey player={players.crashCymbal} top={160} left={-55}/>
             <DrumKey player={players.smallTom} top={70} left={-105}/>
             <DrumKey player={players.mediumTom} top={80} left={-110}/>
