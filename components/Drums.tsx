@@ -35,5 +35,6 @@ const styles = StyleSheet.create({ // Formatting for the image used on the drums
     alignItems: "center",
     backgroundColor: "#3abecfff",
     justifyContent: "center",
+    userSelect: "none",
   },
 })
